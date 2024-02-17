@@ -1,0 +1,26 @@
+{
+  "name": "dynamo-sbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	 "test": "jest",
+	 "test2": "jest --findRelatedTests test/documentClient2.test.ts",
+	 "test3": "jest --findRelatedTests test/createTable.test.ts",
+	 "watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^16.18.82",
+    "esbuild": "^0.20.0",
+    "esbuild-jest": "^0.5.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1560.0"
+  }
+}
