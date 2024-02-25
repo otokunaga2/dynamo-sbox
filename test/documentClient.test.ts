@@ -4,8 +4,8 @@ import { Movie, Info } from '../src/movie';
 
 const dynamodb = new DocumentClient({
 	credentials: {
-		accessKeyId: 'fakeMyKeyId',
-		secretAccessKey: 'fakeSecretAccessKey',
+		accessKeyId: 'local',
+		secretAccessKey: 'local',
 	},
 	region: 'ap-northeast-1',
 	endpoint: 'http://localhost:8000',

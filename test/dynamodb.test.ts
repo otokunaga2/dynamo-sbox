@@ -96,10 +96,8 @@ test('read item, success', async () => {
 
 	try {
 		const item = await dynamodb.getItem(params).promise();
-		console.log(`result ${JSON.stringify(item)}`)
-		if (item == {}) {
-			throw new Error()
-		}
+		// console.log(`result ${JSON.stringify(item)}`)
+		return item
 	} catch (e) {
 		const error = e as Error;
 		throw e
